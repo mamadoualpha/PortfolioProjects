@@ -1,4 +1,4 @@
-Select *
+ewSelect *
 From PortfolioProject.dbo.CovidDeaths
 Where continent IS NOT NULL
 Order by 3,4
@@ -75,7 +75,7 @@ and dea.date = vac.date
 Where dea.continent is not null
 order by 2, 3
 
---Temp Table
+--Create Temp Table
 Drop Table IF EXISTS #PercentPopulationVaccinated
 Create Table #PercentPopulationVaccinated
 (
